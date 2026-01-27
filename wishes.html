@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💌 Birthday Wishes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="balloons">
+            <div class="balloon balloon-1">🎈</div>
+            <div class="balloon balloon-2">🎈</div>
+            <div class="balloon balloon-3">🎈</div>
+            <div class="balloon balloon-4">🎈</div>
+        </div>
+        
+        <div class="content">
+            <a href="index.html" class="back-btn">← Back to Home</a>
+            
+            <h1 class="title">💌 Birthday Wishes</h1>
+            <p class="subtitle">All the love and warm wishes for you!</p>
+            
+            <div class="wishes-stats">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalWishes">0</div>
+                    <div class="stat-label">Total Wishes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">❤️</div>
+                    <div class="stat-label">Filled with Love</div>
+                </div>
+            </div>
+            
+            <div id="wishesContainer" class="wishes-container">
+                <!-- Wishes will be dynamically inserted here -->
+            </div>
+            
+            <div id="noWishes" class="no-wishes hidden">
+                <div class="empty-state">
+                    <div class="empty-icon">📭</div>
+                    <h3>No wishes yet!</h3>
+                    <p>Be the first to send a birthday wish.</p>
+                    <a href="wish.html" class="btn btn-primary">Send a Wish</a>
+                </div>
+            </div>
+            
+            <div class="action-section">
+                <a href="wish.html" class="btn btn-accent">Add Your Wish ✍️</a>
+                <button id="clearWishes" class="btn btn-outline">Clear All Wishes</button>
+            </div>
+        </div>
+        
+        <div class="sparkles">
+            <span class="sparkle">✨</span>
+            <span class="sparkle">⭐</span>
+            <span class="sparkle">✨</span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
