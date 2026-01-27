@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✍️ Send Birthday Wish</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="balloons">
+            <div class="balloon balloon-1">🎈</div>
+            <div class="balloon balloon-2">🎈</div>
+            <div class="balloon balloon-3">🎈</div>
+        </div>
+        
+        <div class="content">
+            <a href="index.html" class="back-btn">← Back to Home</a>
+            
+            <h1 class="title">✍️ Send Your Birthday Wish</h1>
+            <p class="subtitle">Share your heartfelt message!</p>
+            
+            <div class="form-container">
+                <form id="wishForm" class="wish-form">
+                    <div class="form-group">
+                        <label for="senderName">Your Name</label>
+                        <input type="text" id="senderName" name="senderName" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="relationship">Your Relationship</label>
+                        <select id="relationship" name="relationship" required>
+                            <option value="">Select relationship</option>
+                            <option value="Friend">Friend</option>
+                            <option value="Family">Family</option>
+                            <option value="Colleague">Colleague</option>
+                            <option value="Partner">Partner</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="wishMessage">Your Birthday Wish</label>
+                        <textarea id="wishMessage" name="wishMessage" rows="6" placeholder="Write your heartfelt birthday message here..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="favoriteMemory">Favorite Memory (Optional)</label>
+                        <input type="text" id="favoriteMemory" name="favoriteMemory" placeholder="Share a special memory">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="wishColor">Choose a Color Theme</label>
+                        <div class="color-picker">
+                            <input type="radio" id="color1" name="wishColor" value="#ff6b9d" checked>
+                            <label for="color1" class="color-option" style="background: #ff6b9d;"></label>
+                            
+                            <input type="radio" id="color2" name="wishColor" value="#4ecdc4">
+                            <label for="color2" class="color-option" style="background: #4ecdc4;"></label>
+                            
+                            <input type="radio" id="color3" name="wishColor" value="#ffd93d">
+                            <label for="color3" class="color-option" style="background: #ffd93d;"></label>
+                            
+                            <input type="radio" id="color4" name="wishColor" value="#a78bfa">
+                            <label for="color4" class="color-option" style="background: #a78bfa;"></label>
+                            
+                            <input type="radio" id="color5" name="wishColor" value="#fb923c">
+                            <label for="color5" class="color-option" style="background: #fb923c;"></label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-large">
+                        Send Birthday Wish 🎉
+                    </button>
+                </form>
+                
+                <div id="successMessage" class="success-message hidden">
+                    <div class="success-icon">✅</div>
+                    <h3>Wish Sent Successfully!</h3>
+                    <p>Your birthday message has been saved.</p>
+                    <a href="wishes.html" class="btn btn-secondary">View All Wishes</a>
+                    <a href="index.html" class="btn btn-accent">Back to Home</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sparkles">
+            <span class="sparkle">✨</span>
+            <span class="sparkle">⭐</span>
+            <span class="sparkle">✨</span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

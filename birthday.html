@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎁 Birthday Surprise!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container birthday-page">
+        <a href="index.html" class="back-btn">← Back to Home</a>
+        
+        <div class="content">
+            <div id="beforeReveal" class="reveal-section">
+                <h1 class="title pulse">🎁 Ready for Your Surprise?</h1>
+                <p class="subtitle">Click the gift to reveal your birthday magic!</p>
+                
+                <div class="gift-container">
+                    <button id="revealBtn" class="gift-box">
+                        <div class="gift-bow">🎀</div>
+                        <div class="gift-body">🎁</div>
+                        <p class="gift-text">Click Me!</p>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="afterReveal" class="reveal-section hidden">
+                <h1 class="title rainbow-text">🎉 HAPPY BIRTHDAY! 🎉</h1>
+                <div class="birthday-message">
+                    <h2 class="celebration-text">Wishing you the most amazing day!</h2>
+                    <p class="birthday-quote">
+                        "May your birthday be filled with laughter, love, and unforgettable moments. 
+                        Here's to another year of wonderful adventures and cherished memories!"
+                    </p>
+                    
+                    <div class="cake-animation">
+                        <div class="cake">🎂</div>
+                        <div class="candles">🕯️🕯️🕯️</div>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <a href="wishes.html" class="btn btn-primary btn-large">
+                            Read Your Birthday Wishes 💌
+                        </a>
+                        <button id="celebrateAgain" class="btn btn-secondary">
+                            Celebrate Again! 🎊
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Confetti Container -->
+        <canvas id="confettiCanvas"></canvas>
+        
+        <!-- Bomb Blast Effect -->
+        <div id="blastEffect" class="blast-effect hidden">
+            <div class="blast-circle blast-1"></div>
+            <div class="blast-circle blast-2"></div>
+            <div class="blast-circle blast-3"></div>
+        </div>
+        
+        <!-- Floating Emojis -->
+        <div id="floatingEmojis" class="floating-emojis hidden"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
